@@ -1,4 +1,8 @@
-header{
+.float-left{
+    float:left
+}
+
+{
     background-color: rgba(37, 36, 36, 0.9);
     height: 100px;
     width: 100%;
@@ -26,7 +30,7 @@ header{
 }
 
 
-
+/* SEZIONE FOOTER */
 footer{
     background-color: #282828;
     height: 100px;
@@ -34,6 +38,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* z-index: 5;
+    position: fixed; */
 }
 
 footer i{
@@ -53,37 +59,15 @@ footer i{
     padding: 0 15px;
 }
 
-
 .col-centrale{
     width: 710px;     
 }
 
-.fa-random{
-    padding-left: 182px;  
-}
 
-.fa-redo-alt{
-    padding-right: 182px;  
-
-
-}
-
-
-.icon-col-centrale{
-    height: 50px;
-    width: 710px;
-    position: absolute;  
-}
-
-.icon-col-centrale > .icon-white{
-    float:left;
-    margin: 0 25px;
-}
-
+/* info brano */
 .ftr-track-id{
     margin-right: 20px;
 }
-
 
 #dimensione-ftr-img-album{
     height: 50px;
@@ -97,6 +81,18 @@ footer i{
 .ftr-track-id p{
     font-size: 10px;
 }
+
+/* icone */
+.icon-col-centrale{
+    height: 50px;
+    width: 710px;
+    position: absolute;  
+}
+
+.icon-col-centrale > .icon-white{    
+    margin: 0 25px;
+}
+
 .icon-white{
     color: white;
 }
@@ -105,6 +101,7 @@ footer i{
     color: #747474;
 }
 
+/* indicatore tempo riproduzione */
 .time-reproduction{
     /* background-color: lightseagreen; */
     color: white;    
@@ -114,43 +111,39 @@ footer i{
     height: 18px;  
 }
 
-.time-start{
-    float: left;
-}
-
-.volume-hr-line-lightgray{
+.time-hr-line-lightgray{
     width: 160px;
     background-color: lightgray;
-    height: 7px;    
-    float: left;
+    height: 7px;      
     border-radius: 5px;
     /* border-bottom-left-radius: 5px; */
     margin-left: 50px;
     margin-top: 6px;
 }
 
-.volume-hr-line-gray{
+.time-hr-line-gray{
     width: 400px;
     background-color: gray;
-    height: 7px;    
-    float: left;
+    height: 7px;      
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-right: 50px;
     margin-top: 6px;
-
-
 }
 
-.time-end{
-    float: left;
+.fa-random{
+    padding-left: 182px;  
 }
 
+.fa-redo-alt{
+    padding-right: 182px;  
+}
+
+/* indicatore volume */
 .horizontal-line-lightgray{
     background-color: lightgray;
     height: 5px;
-    width: 20px;
-    float: left;
+    width: 20px;   
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -158,8 +151,10 @@ footer i{
 .horizontal-line-gray{
     background-color: gray;
     height: 5px;
-    width: 70px;
-    float: left;
+    width: 70px;    
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+
+
