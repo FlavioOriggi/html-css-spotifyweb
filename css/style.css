@@ -1,21 +1,114 @@
+/* COMMON */
 .float-left{
     float:left
 }
 
-{
+.box{
+    height: calc(100vh - 100px);
+    background-color: #ffc0cb;
+    border: 1px solid black;
+    padding: 15px;        
+    color: black;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;     */
+}
+
+/* SEZIONE MENU A LATO */
+.menu-a-lato{
+    /* background-color: black; */    
+}
+
+.logo{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+
+.menu-a-lato i{
+    margin-right: 10px;
+    margin: 10px 0;
+}
+
+.menu-a-lato a{
+    text-decoration: none;    
+}
+
+
+/* playlist */
+.playlist h3{
+    color: white;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.icon-add{
+    height: 40px;
+    width: 100%;
+    vertical-align: middle;
+    background-color: greenyellow;
+}
+
+.fa-plus{
+    background-color: #747474;
+    width: 40px;
+    height: 40px;
+   
+}
+
+
+/* lista playlist */
+.lista-delle-playlist{
+    height: 200px;
+    width: 100%;
+    overflow-y: auto;
+    background-color: coral;    
+}
+
+ul li a{
+    text-decoration:none;    
+}
+
+li{
+    margin: 10px 0;
+}
+
+
+/* blocco inferiore */
+.blocco-inferiore{
+   margin-top: 340px;
+}
+
+.blocco-inferiore > div{
+    margin: 10px 0;
+}
+
+.blocco-inferiore a{
+    text-decoration:none;    
+}
+
+.nome-utente{
+    font-size: 16px;
+}
+
+.nome-utente i{
+    font-size: 25px;   
+}
+
+
+
+
+/* MENU PRINCIPALE */
+
+/* header del menu principale */
+.header-del-menu-principale{
     background-color: rgba(37, 36, 36, 0.9);
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo{
-    background-color: red;
-    height: 70px;
-    width: 200px;
-    cursor: pointer;
 }
 
 .btn-upgrade{
