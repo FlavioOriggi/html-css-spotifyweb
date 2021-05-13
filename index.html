@@ -12,144 +12,170 @@
 </head>
 <body>
 
-    <main>
+    <main class="container-fluid">
         <div class="row">
             <div class="col-xs-2">
-                <div class="box menu-a-lato">
-                    <div class="logo"><img src="img/logo.svg" alt=""></div>
-                    <div class="item-menu-a-lato icon-grey">
-                        <div class="icon-menu-a-lato"><a href="#"><i class="fas fa-home"></i>Home</a></div>
-                        <div class="icon-menu-a-lato"><a href="#"><i class="fas fa-search"></i>Cerca</a></div>
-                        <div class="icon-menu-a-lato"><a href="#"> <span>||\</span>La tua libreria</a></div>
-                        <div class="playlist">
-                            <h3>PLAYLIST</h3>
-                            <div class="icon-add icon-grey">
-                                <p><a href=""><span><i class="fas fa-plus"></i></span>Crea playlist</a></p>
-                            </div>
-                               
-                            <div class="lista-delle-playlist icon-grey">
-                                <ul>
-                                    <li><a href="">Nome Playlist</a></li>
-                                    <li><a href="">Nome Playlist</a></li>
-                                    <li><a href="">Nome Playlist</a></li>
-                                    <li><a href="">Nome Playlist</a></li>
-                                    <li><a href="">Nome Playlist</a></li>
-                                    <li><a href="">Nome Playlist</a></li>
-                                    <li><a href="">Nome Playlist</a></li>                                        
-                                </ul>
-                            </div>                            
-                        </div>
+                <div class="row box menu-a-lato">
 
-                        <div class="blocco-inferiore icon-grey">
-                            <div class="installa-app">
-                                <p><a href=""><strong><span><i class="far fa-arrow-alt-circle-down"></i></span>Installa app</strong></a> </p>
-                            </div>
-                            <hr>
-                            <div class="nome-utente">
-                                <p><a href=""><strong><span><i class="fas fa-user-circle"></i></span>John Doe</strong></a> </p>
-                            </div>
+
+                    <div class="sez-up-menu-a-lato">
+
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="">
                         </div>
+                   
+                        <nav class="item-menu-a-lato icon-grey">
+                            <ul>
+                                <li><a href="#"><span><i class="fas fa-home"></i></span>Home</a></li>
+                                <li><a href="#"><span><i class="fas fa-search"></i></span>Cerca</a></li>
+                                <li><a href="#"> <span>||\</span>La tua libreria</a></li>
+                            </ul>
+                        </nav>
+                        
+                        
+                        <nav class="playlist">
+                            <ul>
+                                <li><strong>PLAYLIST</strong></li>
+                                <li><a class="btn-add-menu-a-lato" href=""><i class="fas fa-plus"></i>Crea playlist</a></li>                            
+                            </ul>
+                            
+                            <ul class="lista-delle-playlist icon-grey">
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>                                        
+                            </ul>
+                                                        
+                        </nav>
                     </div>
 
 
-                
-                
-                
+                    <div class="sez-down-menu-a-lato">
+                        <div class="installa-app">
+                            <p><a href=""><strong><span><i class="far fa-arrow-alt-circle-down"></i></span>Installa app</strong></a> </p>
+                        </div>
+                        <hr>
+                        <div class="nome-utente">
+                            <p><a href=""><strong><span><i class="fas fa-user-circle"></i></span>John Doe</strong></a> </p>
+                        </div>
+                    </div>                 
                 
                 </div>
+
             </div>
-            <div class="col-xs-10">
+
+
+            <div class="col-xs-10 main-content">
                 <div class="box"></div>
-            </div>            
-        </div>    
-    </main>     
-
-    
-
-    <!-- SEZIONE FOOTER -->
-    <footer>
-
-        <!-- blocco sx -->
-        <div class="col">
-
-            <!-- info brano in riproduzione -->
-            <div class="ftr-img-album">
-                <img id="dimensione-ftr-img-album" src="img/sinister.jpeg" alt="sinister">                
             </div> 
-            <div class="ftr-track-id">
-                <h5 class="icon-white"><strong>Sinister</strong></h5>
-                <p class="icon-grey"><strong>Brano nome</strong></p>
-            </div>
 
-            <!-- icone -->
-            <div class="icon-grey favourite-list">
-                <i class="far fa-heart"></i>
-            </div>
-            <div class="icon-grey folder">
-                <i class="far fa-folder"></i>
-            </div>
-        </div>
+        </div>  
+        
+        
+        <!-- SEZIONE FOOTER -->
+        <footer>
 
+            <!-- blocco sx -->
+            <div class="col">
 
-        <!-- blocco centrale -->
-        <div class="col-centrale">
+                <!-- info brano in riproduzione -->
+                <div class="ftr-img-album">
+                    <img id="dimensione-ftr-img-album" src="img/sinister.jpeg" alt="sinister">                
+                </div> 
+                <div class="ftr-track-id">
+                    <h5 class="icon-white"><strong>Sinister</strong></h5>
+                    <p class="icon-grey"><strong>Brano nome</strong></p>
+                </div>
 
-            <!-- icone -->
-            <div class="icon-col-centrale">
-                <div class="icon-white float-left">
-                    <i class="fas fa-random"></i>
+                <!-- icone -->
+                <div class="icon-grey favourite-list">
+                    <i class="far fa-heart"></i>
                 </div>
-                <div class="icon-white float-left">
-                    <i class="fas fa-step-backward"></i>
-                </div>
-                <div class="icon-white float-left">
-                    <i class="far fa-play-circle"></i>
-                </div>
-                <div class="icon-white float-left">
-                    <i class="fas fa-step-forward"></i>
-                </div>
-                <div class="icon-white float-left">
-                    <i class="fas fa-redo-alt"></i>
+                <div class="icon-grey folder">
+                    <i class="far fa-folder"></i>
                 </div>
             </div>
 
-            <!-- indicatore tempo riproduzione -->
-            <div class="time-reproduction">                
-                <div class="icon-time-horizontal-line">
-                    <div class="time-start float-left"><strong>0:25</strong></div>
-                    <div class="time-hr-line-lightgray float-left">
-                    </div>    
-                    <div class="time-hr-line-gray float-left">
+
+            <!-- blocco centrale -->
+            <div class="col-centrale">
+
+                <!-- icone -->
+                <div class="icon-col-centrale">
+                    <div class="icon-white float-left">
+                        <i class="fas fa-random"></i>
                     </div>
-                    <div class="time-end float-left"><strong>4:35</strong></div>
-                </div>               
-            </div>
-        </div>
-
-
-        <!-- blocco dx -->
-        <div class="col">
-
-            <!-- icone -->
-            <div class="icon-white">
-                <i class="fas fa-list"></i>                                
-            </div> 
-            <div class="icon-white">
-                <i class="fas fa-desktop"></i>
-            </div>
-            <div class="icon-white">
-                <i class="fas fa-volume-up"></i>
-            </div>
-
-            <!-- indicatore volume -->
-            <div class="icon-volume-horizontal-line">
-                <div class="horizontal-line-lightgray float-left">
+                    <div class="icon-white float-left">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="icon-white float-left">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    <div class="icon-white float-left">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="icon-white float-left">
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
                 </div>
-                <div class="horizontal-line-gray float-left">
-                </div>                
+
+                <!-- indicatore tempo riproduzione -->
+                <div class="time-reproduction">                
+                    <div class="icon-time-horizontal-line">
+                        <div class="time-start float-left"><strong>0:25</strong></div>
+                        <div class="time-hr-line-lightgray float-left">
+                        </div>    
+                        <div class="time-hr-line-gray float-left">
+                        </div>
+                        <div class="time-end float-left"><strong>4:35</strong></div>
+                    </div>               
+                </div>
             </div>
-        </div>
-    </footer>
+
+
+            <!-- blocco dx -->
+            <div class="col">
+
+                <!-- icone -->
+                <div class="icon-white">
+                    <i class="fas fa-list"></i>                                
+                </div> 
+                <div class="icon-white">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="icon-white">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+
+                <!-- indicatore volume -->
+                <div class="icon-volume-horizontal-line">
+                    <div class="horizontal-line-lightgray float-left">
+                    </div>
+                    <div class="horizontal-line-gray float-left">
+                    </div>                
+                </div>
+            </div>
+        </footer>
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </main> 
+   
 </body>
 </html>

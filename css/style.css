@@ -16,58 +16,53 @@
 
 /* SEZIONE MENU A LATO */
 .menu-a-lato{
-    /* background-color: black; */    
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sez-up-menu-a-lato{
+    width: 100%;
+    height: calc(100% - 150px);
+}
+
+.sez-up-menu-a-lato > ul, li, a{
+    text-decoration: none;
+    list-style: none;
 }
 
 .logo{
-    width: 200px;
+    width: 70%px;
     margin-bottom: 20px;
 }
 
-
-.menu-a-lato i{
+.item-menu-a-lato i{
     margin-right: 10px;
     margin: 10px 0;
 }
 
-.menu-a-lato a{
-    text-decoration: none;    
-}
-
 
 /* playlist */
-.playlist h3{
-    color: white;
-    margin-top: 10px;
-    font-size: 17px;
-    font-weight: bolder;
+.playlist{
+    overflow:hidden;
+    height:80%;
 }
 
-.icon-add{
-    height: 40px;
-    width: 100%;
-    vertical-align: middle;
-    background-color: greenyellow;
-}
-
-.fa-plus{
+.playlist i{
     background-color: #747474;
     width: 40px;
-    height: 40px;
-   
+    height: 40px;   
+    line-height: 40px;
+    padding-left: 13px;  
+    margin-right: 10px;  
 }
 
 
 /* lista playlist */
-.lista-delle-playlist{
-    height: 200px;
-    width: 100%;
+.lista-delle-playlist{    
+    width: 100%;    
+    background-color: coral; 
     overflow-y: auto;
-    background-color: coral;    
-}
-
-ul li a{
-    text-decoration:none;    
+    height:40%;   
 }
 
 li{
@@ -76,17 +71,22 @@ li{
 
 
 /* blocco inferiore */
-.blocco-inferiore{
-   margin-top: 340px;
+.sez-down-menu-a-lato{
+   padding-top: 90px;
+    height:150px;
+    flex-shrink: 1;
+    width: 100%;
 }
 
-.blocco-inferiore > div{
+.sez-down-menu-a-lato a{
+    color: gray;    
+}
+
+.sez-down-menu-a-lato hr{
+    color: gray;
     margin: 10px 0;
 }
 
-.blocco-inferiore a{
-    text-decoration:none;    
-}
 
 .nome-utente{
     font-size: 16px;
@@ -118,9 +118,7 @@ li{
     cursor: pointer;
 }
 
-#btn-testo-white{
 
-}
 
 
 /* SEZIONE FOOTER */
