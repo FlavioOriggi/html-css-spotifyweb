@@ -19,17 +19,11 @@
     flex-shrink: 1;
 }
 
-
-
-
 .box{
     height: calc(100vh - 100px);
     background-color: #ffc0cb;
     border: 1px solid black;
-    color: black;    
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center;     */
+    color: black;     
 }
 
 /* SEZIONE MENU A LATO */
@@ -40,6 +34,8 @@
     justify-content: space-between;
     background-color: black;
     overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
 
 .sez-up-menu-a-lato{
@@ -82,8 +78,7 @@
 .playlist{
     overflow:hidden;
     height:80%;
-    padding: 15px;        
-
+    padding: 15px;       
 }
 
 .playlist i{
@@ -121,7 +116,7 @@
     height:100px;
     flex-shrink: 1;
     width: 100%;
-    padding: 15px;     
+    padding: 15px; 
 }
 
 .installa-app i{
@@ -161,7 +156,10 @@
     height: 100px;
     width: 100%;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; 
+    position: fixed;
+    z-index: 1;
+    right: 0;   
 }
 
 .btn-upgrade{    
@@ -182,6 +180,7 @@
     width: 100%;              
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
 }
 
 .item-menu-main ul li{
@@ -191,50 +190,88 @@
 
 /* contenuto del main */
 
-.recently-played{
-    width: 100%;
-    
-}
-
-.recently-played h3{
-    padding: 10px;
-    font-size: 25px;
-}
-
 .content-recently{
     background-color: magenta;
     width: 100%;
-    height: 400px;
+    /* height: 40vh; */
     padding: 10px;      
 }
 
-.item-recently{
+.item {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: maroon;
     text-align: center;
 }
 
-.item-recently h4{
+.item p{       
+    font-size: 12px;
+    font-weight: bold;
+    color: #6c6e73;
+    padding-bottom: 10px; 
+}
+
+#img-item{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.item h4{
     font-size: 20px;
     font-weight: bolder;
     color: white; 
     margin-bottom: 5px;
 }
 
-.item-recently p{
+/* prima riga */
+.recently-played h3{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: white; 
+}
+ 
+/* seconda riga */
+.creato-per-nome-utente h3{
+    font-size: 25px;
+    margin-top:10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: white;   
+}
+
+
+.creato-per-nome-utente p{
     font-size: 12px;
+    margin-left: 10px;
     font-weight: bold;
-    color: #6c6e73;   
+    color: #6c6e73;
+}
+
+/* terza riga */
+.artisti-popolari h3{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    color: white;   
+}
+
+
+.artisti-popolari p{    
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #6c6e73; 
 }
 
 
 
-#img-recently{
+#img-art-popular{
     width: 100%;
     margin-bottom: 10px;
+    border-radius: 50%;
 }
-
 
 
 
