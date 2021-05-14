@@ -21,17 +21,13 @@
 
 .box{
     height: calc(100vh - 100px);
-    background-color: #141922;
-    /* border: 1px solid black; */        
-}
-
-.p-b-60{
-    padding-bottom: 60px;
+    background-color: #141922;           
 }
 
 .layover-white:hover{
     color:white
 }
+
 
 /* SEZIONE MENU A LATO */
 .menu-a-lato{      
@@ -61,8 +57,7 @@
 
 .logo{
     width: 70%;    
-    padding: 15px;        
-
+    padding: 15px       
 }
 
 .item-menu-a-lato span{
@@ -78,10 +73,6 @@
 .fa-search, .fa-grip-lines-vertical{      
     padding-left: 15px;
 }
-
-
-
-
 
 /* playlist */
 .playlist{
@@ -104,11 +95,8 @@
     color: black;    
 }
 
-
 /* lista playlist */
-.lista-delle-playlist{    
-       
-    
+.lista-delle-playlist{ 
     overflow-y: auto;
     height:50%;     
 }
@@ -117,7 +105,6 @@
     margin: 10px 0;
     color: gray;
 }
-
 
 /* blocco inferiore */
 .sez-down-menu-a-lato{ 
@@ -188,8 +175,7 @@
 }
 
 /* menu del main centrale */
-.item-menu-main{
-    /* background-color: rgb(119, 62, 62); */
+.item-menu-main{    
     height: 80px;
     width: 100%;              
     justify-content: space-around;
@@ -203,8 +189,7 @@
 }
 
 /* contenuto del main */
-.content-recently{
-    /* background-color: magenta; */
+.content-recently{    
     width: 100%;    
     padding: 10px;    
     position: relative;
@@ -212,20 +197,24 @@
 
 .item {
     width: 100%;   
-    /* background-color: maroon; */
     text-align: center;
 }
 
-.item p{       
+.item-text{
+    width: 100%;
+    height: 110px;    
+    padding: 10px 5px 0px 5px;    
+}
+
+.item-text p{       
     font-size: 12px;
     font-weight: bold;
     color: #6c6e73;
-    padding-bottom: 10px; 
+    padding-top: 5px; 
 }
 
 #img-item{
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .layover-img-item{    
@@ -233,7 +222,7 @@
     height: 100%;
     position: absolute;    
     top: -20px;        
-    left: -15px;
+    left: -20px;
     padding: 100px;
     display: none;
 }
@@ -251,15 +240,14 @@
 .item .fa-play-circle:hover {
     animation: grow 1s linear;
 }
+
 @keyframes grow {
     0% {
-        transform: scale(1);
+        transform: scale(0.8);              
     }
     50% {
-        transform: scale(0.5);
-        color: transparent
-
-       
+        transform: scale(0.4);
+        color: transparent;       
     }
     100% {
         transform: scale(1);
@@ -290,7 +278,6 @@
     color: white;   
 }
 
-
 .creato-per-nome-utente p{
     font-size: 12px;
     margin-left: 10px;
@@ -308,7 +295,6 @@
     color: white;   
 }
 
-
 .artisti-popolari p{    
     font-size: 12px;
     margin-left: 10px;
@@ -317,14 +303,11 @@
     color: #6c6e73; 
 }
 
-
-
 #img-art-popular{
     width: 100%;
     margin-bottom: 10px;
     border-radius: 50%;
 }
-
 
 
 /* SEZIONE FOOTER */
@@ -370,7 +353,6 @@ footer i{
     justify-content: flex-end;
 }
 
-
 /* info brano */
 .ftr-track-id{
     margin-right: 20px;
@@ -404,21 +386,18 @@ footer i{
     width: 710px;
     position: absolute;  
 }
+
 .col-sx i:hover{
     color:white;
 }
+
 .icon-footer i:hover{
     transform: scale(1.1);
 }
 
-
-
-
 .icon-col-centrale > .icon-white{    
     margin: 0 25px;
 }
-
-
 
 /* indicatore tempo riproduzione */
 .time-reproduction{    
@@ -436,6 +415,40 @@ footer i{
     border-radius: 5px;   
     margin-left: 50px;
     margin-top: 6px;
+}
+
+.layover-time-line{
+    width: 160px;
+    background-color: rgb(43, 182, 25);
+    height: 7px;      
+    border-radius: 5px;   
+    margin-left: 50px;
+    margin-top: 6px;
+    display: none;
+    position: absolute;  
+    left: 25px;
+    top: 0px;         
+}
+
+.cursor-time{
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: whitesmoke; 
+    display: none;
+    position: absolute; 
+    left: 225px;
+    top: 2px;    
+}
+
+.time-hr-line-lightgray:hover .layover-time-line{
+    display: block;   
+    cursor: pointer; 
+}
+
+.time-hr-line-lightgray:hover .cursor-time{
+    display: block;   
+    cursor: pointer; 
 }
 
 .time-hr-line-gray{
@@ -460,9 +473,42 @@ footer i{
 .horizontal-line-lightgray{
     background-color: lightgray;
     height: 5px;
-    width: 20px;   
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    width: 22px;   
+    border-radius: 5px;    
+}
+
+.layover-volume-line{
+    width: 22px;
+    background-color: rgb(43, 182, 25);
+    height: 5px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 6px;
+    display: none;
+    position: absolute;    
+    top: 42px;
+    right: 80px;
+}
+
+.cursor-volume{
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    display: none;
+    position: absolute;    
+    top: 46px;
+    right: 76px;
+}
+
+.horizontal-line-lightgray:hover .layover-volume-line{
+    display: block;   
+    cursor: pointer; 
+}
+
+.horizontal-line-lightgray:hover .cursor-volume{
+    display: block;   
+    cursor: pointer; 
 }
 
 .horizontal-line-gray{
