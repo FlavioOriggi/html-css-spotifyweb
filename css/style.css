@@ -29,6 +29,10 @@
     padding-bottom: 60px;
 }
 
+.layover-white:hover{
+    color:white
+}
+
 /* SEZIONE MENU A LATO */
 .menu-a-lato{      
     min-height:480px;
@@ -69,12 +73,14 @@
 .fa-home{
     border-left: 3px solid #adff2f;
     padding-left: 12px;
-
 }
 
-.fa-search, .fa-grip-lines-vertical{
+.fa-search, .fa-grip-lines-vertical{      
     padding-left: 15px;
 }
+
+
+
 
 
 /* playlist */
@@ -158,7 +164,7 @@
 .header-main-content{
     background-color: rgba(37, 36, 36, 0.9);
     height: 100px;
-    width: 100%;
+    width: 100%;  
     justify-content: flex-end;
     align-items: center; 
     position: fixed;
@@ -175,6 +181,10 @@
     justify-content: space-around;
     align-items: center;
     margin-right: 10px;
+}
+
+.btn-upgrade:hover{
+    transform: scale(1.1);
 }
 
 /* menu del main centrale */
@@ -196,7 +206,8 @@
 .content-recently{
     /* background-color: magenta; */
     width: 100%;    
-    padding: 10px;      
+    padding: 10px;    
+    position: relative;
 }
 
 .item {
@@ -214,7 +225,45 @@
 
 #img-item{
     width: 100%;
-    margin-bottom: 10px;
+    
+}
+
+.layover-img-item{    
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+    top: -20px;        
+    left: -15px;
+    padding: 100px;
+    display: none;
+}
+
+.item .fa-play-circle{
+    color: white;
+    font-size: 100px;
+}
+
+.content-recently:hover .layover-img-item{
+    display: block;   
+    cursor: pointer; 
+}
+
+.item .fa-play-circle:hover {
+    animation: grow 1s linear;
+}
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+        color: transparent
+
+       
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .item h4{
@@ -332,6 +381,10 @@ footer i{
     width: 50px;
 }
 
+#dimensione-ftr-img-album:hover{
+    transform: scale(1.5);
+}
+
 .ftr-track-id{
     width: 100px;    
 }
@@ -340,12 +393,26 @@ footer i{
     font-size: 10px;
 }
 
+.ftr-track-id p:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 /* icone */
 .icon-col-centrale{
     height: 50px;
     width: 710px;
     position: absolute;  
 }
+.col-sx i:hover{
+    color:white;
+}
+.icon-footer i:hover{
+    transform: scale(1.1);
+}
+
+
+
 
 .icon-col-centrale > .icon-white{    
     margin: 0 25px;
