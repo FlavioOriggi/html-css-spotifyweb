@@ -3,12 +3,24 @@
     float:left
 }
 
+.icon-white{
+    color: white;
+}
+
+.icon-grey {
+    color: #747474;
+}
+
+.d-flex{
+    display: flex;
+}
+
+
 .box{
     height: calc(100vh - 100px);
     background-color: #ffc0cb;
     border: 1px solid black;
-    padding: 15px;        
-    color: black;
+    color: black;    
     /* display: flex; */
     /* align-items: center;
     justify-content: center;     */
@@ -18,11 +30,12 @@
 .menu-a-lato{
     flex-direction: column;
     justify-content: space-between;
+    background-color: black;
 }
 
 .sez-up-menu-a-lato{
     width: 100%;
-    height: calc(100% - 150px);
+    height: calc(100% - 150px);    
 }
 
 .sez-up-menu-a-lato > ul, li, a{
@@ -30,14 +43,29 @@
     list-style: none;
 }
 
-.logo{
-    width: 70%px;
-    margin-bottom: 20px;
+.sez-up-menu-a-lato li{
+    margin: 10px 0;
 }
 
-.item-menu-a-lato i{
-    margin-right: 10px;
-    margin: 10px 0;
+.logo{
+    width: 70%;    
+    padding: 15px;        
+
+}
+
+.item-menu-a-lato span{
+    margin-right: 10px;  
+    font-size: 25px;  
+}
+
+.fa-home{
+    border-left: 3px solid #adff2f;
+    padding-left: 12px;
+
+}
+
+.fa-search, .fa-grip-lines-vertical{
+    padding-left: 15px;
 }
 
 
@@ -45,41 +73,49 @@
 .playlist{
     overflow:hidden;
     height:80%;
+    padding: 15px;        
+
 }
 
 .playlist i{
-    background-color: #747474;
+    background-color: #a3a3a3;
     width: 40px;
     height: 40px;   
     line-height: 40px;
-    padding-left: 13px;  
+    padding-left: 11px;  
     margin-right: 10px;  
+    font-size: 20px;
+}
+
+.playlist a{
+    color: black;    
 }
 
 
 /* lista playlist */
 .lista-delle-playlist{    
     width: 100%;    
-    background-color: coral; 
+    /* background-color: coral;  */
     overflow-y: auto;
-    height:40%;   
+    height:40%;     
 }
 
-li{
+.lista-delle-playlist a{
     margin: 10px 0;
+    color: gray;
 }
 
 
 /* blocco inferiore */
-.sez-down-menu-a-lato{
-   padding-top: 90px;
-    height:150px;
+.sez-down-menu-a-lato{       
+    height:100px;
     flex-shrink: 1;
     width: 100%;
+    padding: 15px;     
 }
 
-.sez-down-menu-a-lato a{
-    color: gray;    
+.installa-app i{
+    margin-right: 5px;    
 }
 
 .sez-down-menu-a-lato hr{
@@ -87,13 +123,19 @@ li{
     margin: 10px 0;
 }
 
-
-.nome-utente{
+.nome-utente a{
     font-size: 16px;
+    color: white;
 }
 
 .nome-utente i{
-    font-size: 25px;   
+    font-size: 25px;
+    margin-right: 5px;
+    background-color: white; 
+    color: gray; 
+    height: 24px;
+    width: 24px;
+    border-radius: 50%; 
 }
 
 
@@ -102,20 +144,50 @@ li{
 /* MENU PRINCIPALE */
 
 /* header del menu principale */
-.header-del-menu-principale{
+.header-main-content{
     background-color: rgba(37, 36, 36, 0.9);
     height: 100px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.btn-upgrade{
-    background-color: lightblue;
-    height: 70px;
+.btn-upgrade{    
+    border: 1px solid white;
+    height: 40px;
     width: 200px;
-    cursor: pointer;
+    border-radius: 25px;
+    cursor: pointer;    
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.menu-main-content{
+    height: 100px;
+    width: 100%;    
+    justify-content: space-around;
+    align-items:flex-start;
+    background-color: blue;
+}
+
+.item-menu-main{
+    background-color: rgb(119, 62, 62);
+    width: 50%;
+    height: 50px;            
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+.item-menu-main ul li{
+    display: inline-block;
+    padding-bottom: 5px;
+    
+}
+
+.item-menu-main li:first-child{
+    border-bottom: 3px solid lime;
 }
 
 
@@ -125,8 +197,7 @@ li{
 footer{
     background-color: #282828;
     height: 100px;
-    width: 100%;
-    display: flex;
+    width: 100%;    
     justify-content: space-between;
     align-items: center;
     /* z-index: 5;
@@ -137,8 +208,7 @@ footer i{
     font-size: 20px;
 }
 
-.col, .col-centrale {
-    display: flex;
+.col, .col-centrale {    
     align-items: center;    
 }
 
@@ -184,13 +254,7 @@ footer i{
     margin: 0 25px;
 }
 
-.icon-white{
-    color: white;
-}
 
-.icon-grey {
-    color: #747474;
-}
 
 /* indicatore tempo riproduzione */
 .time-reproduction{
