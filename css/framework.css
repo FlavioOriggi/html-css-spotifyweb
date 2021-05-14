@@ -35,9 +35,10 @@
 }
 .col-xs-2 {
     flex-basis: calc((100% / 12) * 2);
-    max-width: calc((100% / 12) * 2);
-    ;
+    max-width: calc((100% / 12) * 2);    
 }
+
+
 .col-xs-3 {
     flex-basis: calc((100% / 12) * 3);
     max-width: calc((100% / 12) * 3);
