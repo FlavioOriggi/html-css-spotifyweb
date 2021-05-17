@@ -391,30 +391,33 @@ footer i{
     font-size: 20px;
 }
 
-.col, .col-centrale {    
+.cln, .cln-centrale {    
     align-items: center;    
 }
 
-.col > div{
+.cln > div{
     padding: 0 10px;
 }
 
-.col-centrale > .icon-white{
+.cln-centrale > .icon-white{
     padding: 0 15px;
 }
 
-.col-sx{
+.cln-sx{
+    width: 20%;
     justify-content: flex-start;
 }
 
-.col-centrale{
-    width: 710px;
+.cln-centrale{
+    width: 60%;
     flex-shrink: 2;        
     justify-content: center;
 }
 
-.col-dx{
+.cln-dx{
     justify-content: flex-end;
+    width: 20%;
+
 }
 
 @media screen and (min-width:768px) {
@@ -444,9 +447,9 @@ footer i{
     transform: scale(1.5);
 }
 
-.ftr-track-id{
+/* .ftr-track-id{
     width: 100px;    
-}
+} */
 
 .ftr-track-id p{
     font-size: 10px;
@@ -458,6 +461,7 @@ footer i{
 }
 
 @media screen and (min-width:768px) {
+    
     
     .col > div{
         padding: 0 5px;
@@ -500,7 +504,7 @@ footer i{
 @media screen and (min-width:768px) {
     .icon-col-centrale{
         height: 50px;
-        width: 445px;
+        width: 52%;
         position: absolute;  
     }  
     
@@ -591,6 +595,11 @@ footer i{
         height: 18px;  
     }
     
+    .time-start{
+        margin-left: 15px;
+    }
+
+
     .time-hr-line-lightgray{
         width: 55px;
         background-color: lightgray;
