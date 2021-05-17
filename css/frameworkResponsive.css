@@ -1,6 +1,6 @@
 /* SEZIONE RESPONSIVE */
 
-@media screen and (min-width:420px) and (max-width:539px) {    
+@media screen and (min-width:420px) {    
     .col-xs {
         flex-grow: 1;
         flex-basis: 0;
